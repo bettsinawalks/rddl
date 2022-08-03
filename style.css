@@ -255,7 +255,26 @@ summary:hover {
 
 
 /* breakpoints starts */
-@media (max-width: 390px) {
+@media (max-width: 600px) {
+    .topnav {
+        overflow: hidden;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+
+    .topnav_item {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 30px 0px;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
     h1 {
         font-size: 40px;
     }
@@ -304,17 +323,40 @@ summary:hover {
     }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 600px) and (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
 
+    .flex_row {
+        margin-top: 150px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
 
     .container {
         background-color: white;
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        gap: 32px;
+        gap: 12px;
     }
+
+    .accordion {
+        grid-column: 2 / span 10;
+        margin-top: 0px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
 }
