@@ -255,34 +255,66 @@ summary:hover {
 
 
 /* breakpoints starts */
-@media (max-width: 768px) {
-    .section {
-        display: flex-column;
-        margin-top: 30px;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 15px;
-    }
-
+@media (max-width: 390px) {
     h1 {
-        font-size: 70px;
+        font-size: 40px;
     }
 
     h2 {
         font-size: 35px;
     }
-}
 
-@media (max-width: 1200px) {
+    .flex_column {
+        display: flex-column;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 15px;
+    }
+
     .flex_row {
-        margin-top: 150px;
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-bottom: 40px;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap: 100px;
+        gap: 50px;
+    }
+
+    .container {
+        background-color: white;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 12px;
+    }
+
+    .accordion {
+        grid-column: 2 / span 10;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+
+    .container {
+        background-color: white;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
     }
 }
